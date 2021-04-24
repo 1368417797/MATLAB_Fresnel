@@ -92,12 +92,12 @@ imshow(pic_2);
 title('全息图');
 
 %再现光,采用共轭光
-Er2=conj(Er);
+%Er2=conj(Er);
 %再现光照射
-Eo=Eo.*Er2;
+%Eo=Eo.*Er2;
 
 %消除零级像和共轭像
-Eo=Eo-(abs(Eo0).^2+1).*Er2-Eo0.*conj(Er).*Er2;
+%Eo=Eo-(abs(Eo0).^2+1).*Er2-Eo0.*conj(Er).*Er2;
 
 %再现光,采用原光
 Er2=Er;
